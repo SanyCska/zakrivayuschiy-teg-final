@@ -471,5 +471,5 @@
 }
 
 .hue-rotate {
-  filter: hue-rotate(-90deg);
+  filter: sepia(1) contrast(2) brightness(200%);
 }
