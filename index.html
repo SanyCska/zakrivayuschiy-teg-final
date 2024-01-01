@@ -118,7 +118,7 @@
           <img
             src="./images/image.png"
             alt="Картинка с машиной"
-            class="content__card-image"
+            class="content__card-image brightness"
           />
           <span class="content__img_label">
             &lt;/HTML&gt;
@@ -181,7 +181,7 @@
           <img
             src="./images/image.png"
             alt="Картинка с машиной"
-            class="content__card-image"
+            class="content__card-image contrast"
           />
           <span class="content__img_label">
             &lt;CSS&gt;
@@ -242,7 +242,7 @@
           <img
             src="./images/image.png"
             alt="Картинка с машиной"
-            class="content__card-image"
+            class="content__card-image blur"
           />
           <span class="content__img_label">
             &lt;desigions&gt;
@@ -305,7 +305,7 @@
           <img
             src="./images/image.png"
             alt="Картинка с машиной"
-            class="content__card-image"
+            class="content__card-image opacity"
           />
           <span class="content__img_label">
             care
@@ -367,7 +367,7 @@
           <img
             src="./images/image.png"
             alt="Картинка с машиной"
-            class="content__card-image"
+            class="content__card-image grayscale"
           />
           <span class="content__img_label">
             &lt;support&gt;
@@ -430,7 +430,7 @@
           <img
             src="./images/image.png"
             alt="Картинка с машиной"
-            class="content__card-image"
+            class="content__card-image saturate"
           />
           <span class="content__img_label">
             &lt;lifes-style: none;&gt;
@@ -491,7 +491,7 @@
             <img
               src="./images/image.png"
               alt="Картинка с машиной"
-              class="content__card-image"
+              class="content__card-image hue-rotate"
             />
             <span class="content__img_label">
               &lt;experience&gt;
@@ -547,12 +547,29 @@
       </article>
     </main>
     <footer class="footer">
-      <button type="button" class="footer__save-button page-button">
+      <button type="button" class="footer__save-button page-button" type="button" onclick="window['modal-id'].showModal()">
         <svg viewBox="0 0 28 28" class="footer___floopy-icon">
           <use href="./svg/floppy.svg#floopy-icon" />
         </svg>
         <span class="button__text"> Сохранить на память </span>
       </button>
+      <dialog class="modal" id="modal-id">
+        <form method="dialog" class="modal__form">
+          <div class="modal__content">
+            <svg width="28" height="28" viewBox="0 0 28 28" class="modal__icon">
+              <use href="./svg/floppy.svg#floopy-icon" />
+            </svg>
+            <p class="modal__text">
+              Вставьте дискету, чтобы продолжить
+            </p>
+          </div>
+          <button class="button modal__button">
+            <span class="button__text">
+              OK
+            </span>
+          </button>
+        </form>
+      </dialog>
     </footer>
     <script src="./scripts/set-theme.js"></script>
     <script src="./scripts/like.js"></script>

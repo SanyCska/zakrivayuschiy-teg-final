@@ -6,6 +6,8 @@
   --bg-image: url(../svg/pattern-light.svg);
   --heart-contour-color: #000;
 
+  --button-text-color: #ffff;
+
   --shadow-color: #fff;
   --repeating-gradient: #d3d3d3;
   --top-gradient: #e7e7e7;
@@ -34,6 +36,8 @@
   --bg-image: url(../svg/pattern-dark.svg);
   --heart-contour-color: #00cc14;
 
+  --button-text-color: #00cc14;
+
   --shadow-color: #000;
   --repeating-gradient: #000;
   --top-gradient: #007f0c;
@@ -47,10 +51,7 @@
       var(--repeating-gradient) 0 2px,
       transparent 2px 4px
     ),
-    linear-gradient(
-      var(--top-gradient),
-      var(--bottom-gradient)
-    );
+    linear-gradient(var(--top-gradient), var(--bottom-gradient));
 }
 
 @media (prefers-color-scheme: light) {
@@ -65,6 +66,8 @@
     --top-gradient: #e7e7e7;
     --bottom-gradient: #1a1a1a;
     --shadow-color: #fff;
+
+    --button-text-color: #ffff;
     --bg-gradient: repeating-linear-gradient(
         90deg,
         var(--repeating-gradient) 0 2px,

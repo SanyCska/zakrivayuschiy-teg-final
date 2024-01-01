@@ -9,8 +9,7 @@
   --heart-contour-color: #00cc14;
   --heart-fill-color: #ff0000;
 
-  --button-blend-color: #ffffff;
-  --button-blend-color-2: #ffffff;
+  --button-text-color: #ffff;
 
   --shadow-color: #000;
   --repeating-gradient: #000;
@@ -25,8 +24,5 @@
       var(--repeating-gradient) 0 2px,
       transparent 2px 4px
     ),
-    linear-gradient(
-      var(--top-gradient),
-      var(--bottom-gradient)
-    );
+    linear-gradient(var(--top-gradient), var(--bottom-gradient));
 }

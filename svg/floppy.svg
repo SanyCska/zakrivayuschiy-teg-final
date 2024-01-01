@@ -1,7 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" fill="currentColor">
-    <style>
-    </style>
-    <symbol id='floopy-icon' fill="currentColor" stroke="currentColor" stroke-dasharray="none">
+    <symbol id='floopy-icon' fill="currentColor" >
         <path fill="#000"
         d="M.5 0h2.154v2.154H.5zM.5 2.154h2.154v2.154H.5zM.5 4.308h2.154v2.154H.5zM.5 6.462h2.154v2.154H.5z" />
         <path fill="#000"
