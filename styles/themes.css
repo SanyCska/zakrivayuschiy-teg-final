@@ -1,0 +1,86 @@
+:root .theme-light {
+  --font-weight-main: 700;
+  --font-weight-main-text: 400;
+  --bg-color: #fff;
+  --accent-color: #000;
+  --bg-image: url(../svg/pattern-light.svg);
+  --heart-contour-color: #000;
+
+  --button-text-color: #ffff;
+
+  --shadow-color: #fff;
+  --repeating-gradient: #d3d3d3;
+  --top-gradient: #e7e7e7;
+  --bottom-gradient: #1a1a1a;
+  --bg-gradient: repeating-linear-gradient(
+      90deg,
+      var(--repeating-gradient) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      var(--repeating-gradient) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      var(--top-gradient),
+      var(--top-gradient) 0.01%,
+      var(--bottom-gradient)
+    );
+}
+
+:root .theme-dark {
+  --font-weight-main: 785;
+  --font-weight-main-text: 465;
+  --bg-color: #000;
+  --accent-color: #00cc14;
+  --bg-image: url(../svg/pattern-dark.svg);
+  --heart-contour-color: #00cc14;
+
+  --button-text-color: #00cc14;
+
+  --shadow-color: #000;
+  --repeating-gradient: #000;
+  --top-gradient: #007f0c;
+  --bottom-gradient: #1a1a1a;
+  --bg-gradient: repeating-linear-gradient(
+      90deg,
+      var(--repeating-gradient) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      var(--repeating-gradient) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(var(--top-gradient), var(--bottom-gradient));
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --font-weight-main: 700;
+    --font-weight-main-text: 400;
+    --bg-color: #fff;
+    --accent-color: #000;
+    --bg-image: url(../svg/pattern-light.svg);
+    --heart-contour-color: #000;
+    --repeating-gradient: #d3d3d3;
+    --top-gradient: #e7e7e7;
+    --bottom-gradient: #1a1a1a;
+    --shadow-color: #fff;
+
+    --button-text-color: #ffff;
+    --bg-gradient: repeating-linear-gradient(
+        90deg,
+        var(--repeating-gradient) 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(
+        var(--repeating-gradient) 0 2px,
+        transparent 2px 4px
+      ),
+      linear-gradient(
+        var(--top-gradient),
+        var(--top-gradient) 0.01%,
+        var(--bottom-gradient)
+      );
+  }
+}
