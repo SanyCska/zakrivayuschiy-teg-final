@@ -158,6 +158,8 @@
 
 .content__img-with-label {
   position: relative;
+  border-right: 2px solid var(--accent-color);
+  border-left: 2px solid var(--accent-color);
 }
 
 .content__img_label {
@@ -257,6 +259,15 @@
   color: var(--button-text-color);
 }
 
+.page-button:focus {
+  outline: none;
+}
+
+.page-button:focus-visible {
+  outline: 1px solid var(--accent-color);
+  box-shadow: 2px 2px var(--accent-color);
+}
+
 .page-button::after {
   content: "";
   inline-size: 0;
@@ -353,6 +364,7 @@
 .modal__icon {
   min-inline-size: 40px;
   block-size: 40px;
+  stroke: var(--accent-color);
 }
 
 .modal__text {
@@ -364,6 +376,8 @@
   padding: 9px;
   line-height: 90%; /* 12.6px */
   border: 2px solid var(--accent-color);
+  position: relative;
+  cursor: pointer;
 }
 
 @media (width >= 1440px) {
